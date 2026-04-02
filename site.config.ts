@@ -12,7 +12,7 @@ export default siteConfig({
   name: '酷小呵笔记',
   domain: 'notes.kuhehe.top',
   author: 'Travis Fischer',
-
+  includeNotionIdInUrls: true,
   // open graph metadata (optional)
   description: '酷小呵的资源笔记',
 
