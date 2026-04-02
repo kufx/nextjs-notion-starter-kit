@@ -11,7 +11,7 @@ export default siteConfig({
   // basic site info (required)
   name: '酷小呵笔记',
   domain: 'notes.kuhehe.top',
-  author: 'Travis Fischer',
+  author: '酷小呵 kuhehe.top',
   includeNotionIdInUrls: true,
   // open graph metadata (optional)
   description: '酷小呵的资源笔记',
