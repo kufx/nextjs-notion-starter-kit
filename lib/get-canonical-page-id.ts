@@ -1,8 +1,5 @@
 import { type ExtendedRecordMap } from 'notion-types'
-import {
-  getCanonicalPageId as getCanonicalPageIdImpl,
-  parsePageId
-} from 'notion-utils'
+import { parsePageId } from 'notion-utils'
 
 import { inversePageUrlOverrides } from './config'
 
@@ -20,10 +17,7 @@ export function getCanonicalPageId(
   if (override) {
     return override
   } else {
-    return (
-      getCanonicalPageIdImpl(pageId, recordMap, {
-        uuid
-      }) ?? undefined
-    )
+    // 只改了这里！直接返回纯ID，不拼标题
+    return parsePageId(pageId) ?? undefined
   }
 }
