@@ -6,6 +6,7 @@ import { getSocialImageUrl } from '@/lib/get-social-image-url'
 
 export function PageHead({
   site,
+  page, // 👈 加这一行
   title,
   description,
   pageId,
