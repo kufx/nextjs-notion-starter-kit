@@ -209,6 +209,7 @@ export function NotionPage({
 }: types.PageProps) {
   const router = useRouter()
   const lite = useSearchParam('lite')
+  const page = recordMap?.block?.[pageId]?.value
 
   // lite mode is for oembed
   const isLiteMode = lite === 'true'
