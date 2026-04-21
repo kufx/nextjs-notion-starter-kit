@@ -14,7 +14,7 @@ export default siteConfig({
   author: '酷小呵 kuhehe.top',
   includeNotionIdInUrls: true,
   // open graph metadata (optional)
-  description: '酷小呵的资源笔记',
+  description: '酷小呵笔记（kuhehe.top），收集分享考试备考资料与办公实用教程，希望对你有用～',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
