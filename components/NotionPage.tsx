@@ -291,6 +291,7 @@ export function NotionPage({
       <PageHead
         pageId={pageId}
         site={site}
+        page={page}
         title={title}
         description={socialDescription}
         image={socialImage}
