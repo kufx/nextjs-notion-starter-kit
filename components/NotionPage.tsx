@@ -209,8 +209,6 @@ export function NotionPage({
 }: types.PageProps) {
   const router = useRouter()
   const lite = useSearchParam('lite')
-  const page = pageId ? recordMap?.block?.[pageId]?.value : undefined
-
 
   // lite mode is for oembed
   const isLiteMode = lite === 'true'
@@ -293,7 +291,6 @@ export function NotionPage({
       <PageHead
         pageId={pageId}
         site={site}
-        page={page}
         title={title}
         description={socialDescription}
         image={socialImage}
