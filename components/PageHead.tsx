@@ -6,7 +6,6 @@ import { getSocialImageUrl } from '@/lib/get-social-image-url'
 
 export function PageHead({
   site,
-  page, // 👈 加这一行
   title,
   description,
   pageId,
@@ -19,25 +18,11 @@ export function PageHead({
   image?: string
   url?: string
   isBlogPost?: boolean
-  page?: any // 新增这一行
 }) {
   const rssFeedUrl = `${config.host}/feed`
 
   title = (title ?? site?.name) + ' | ' + site?.name
-  
-  let autoDesc = site?.description || ''
-
-if (page?.summary) {
-  autoDesc = page.summary
-} else if (page?.content?.blocks) {
-  autoDesc = page.content.blocks
-    .filter((b: any) => b.type === 'text' && b.text)
-    .map((b: any) => b.text.map((t: any) => t.plain_text).join(''))
-    .join(' ')
-}
-
-autoDesc = autoDesc.slice(0, 100).trim()
-description = description ?? autoDesc
+  description = description ?? site?.description
 
   
   const socialImageUrl = getSocialImageUrl(pageId) || image
