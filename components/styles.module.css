@@ -25,6 +25,12 @@
   background-color: var(--bg-color);
 }
 
+@media only screen and (max-width: 720px) {
+   .container {
+     padding: 4vmin; /* 手机端从2vmin改成4vmin，总边距变成6%，刚好合适 */
+   }
+}
+
 .loadingIcon {
   animation: spinner 0.6s linear infinite;
   display: block;
