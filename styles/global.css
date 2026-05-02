@@ -18,6 +18,11 @@ a:not(.notion-page-link):not(.notion-collection-card):not(.notion-hash-link):not
   border-radius: 4px;
 }
 
+.notion b {    
+  background: linear-gradient(0,  rgba(255, 255, 0, 0.6),  rgba(255, 255, 0, 0.4)) no-repeat center bottom / 100% 40%;
+  font-weight: bold;
+}
+
 body,
 html {
   padding: 0;
