@@ -75,8 +75,8 @@ border-radius: 6px !important;
 
 .notion-gallery-grid {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  grid-gap: 1.5rem;
-  gap: 1.5rem;
+  grid-gap: 6px;
+  gap: 6px;
 }
 
 /* .notion-gallery-grid .notion-page-icon-inline {
