@@ -137,14 +137,14 @@ border-radius: 6px !important;
 
 
 /* 让标题行变成 flex 容器，强制居中 */
-.notion-page-title {
+.notion-collection .notion-page-title {
   display: flex;
   align-items: center;
   gap: 4px; /* 图标和文字之间的间距，可微调 */
 }
 
 /* 图标强制垂直居中 */
-.notion-page-icon-inline.notion-page-icon-span {
+.notion-collection .notion-page-icon-inline.notion-page-icon-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -153,10 +153,40 @@ border-radius: 6px !important;
 }
 
 /* 文字部分，也设置居中，防止受影响 */
-.notion-page-title-text {
-  line-height: 1.4; /* 和图标高度匹配，可微调 */
+.notion-collection .notion-page-title-text {
+  line-height: 1.3; /* 和图标高度匹配，可微调 */
 }
 
+/* 正文非画廊：图标+文字整体居中 */
+:not(.notion-collection) .notion-page-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 正文非画廊：图标外层容器居中 */
+:not(.notion-collection) .notion-page-icon-inline.notion-page-icon-span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* 正文非画廊：图标本身重置行高 */
+:not(.notion-collection) .notion-page-title-icon.notion-page-icon {
+  line-height: 1 !important;
+}
+
+/* 正文非画廊：标题文字行高适配对齐 */
+:not(.notion-collection) .notion-page-title-text {
+  line-height: 1.3 !important;
+  margin: 0;
+  padding: 0;
+}
 
 
 /* only target safari */
