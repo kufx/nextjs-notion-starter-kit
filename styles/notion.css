@@ -136,6 +136,29 @@ border-radius: 6px !important;
  }
 
 
+/* 让标题行变成 flex 容器，强制居中 */
+.notion-page-title {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* 图标和文字之间的间距，可微调 */
+}
+
+/* 图标强制垂直居中 */
+.notion-page-icon-inline.notion-page-icon-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1; /* 去掉额外行高 */
+}
+
+/* 文字部分，也设置居中，防止受影响 */
+.notion-page-title-text {
+  line-height: 1.4; /* 和图标高度匹配，可微调 */
+}
+
+
+
 /* only target safari */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   _::-webkit-full-page-media,
