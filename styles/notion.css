@@ -427,8 +427,8 @@ border-radius: 6px !important;
 }
 
 .notion-bookmark:hover {
-  border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
-  border-image-slice: 1;
+  border-color: rgba(128, 128, 128, 0.7);
+  transition: border-color 0.2s ease;
 }
 
 .notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
