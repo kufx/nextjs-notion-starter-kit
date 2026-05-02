@@ -189,6 +189,32 @@ const propertyTextValue = (
 const notionRendererComponents: Partial<NotionComponents> = {
   nextLegacyImage: Image,
   nextLink: Link,
+  Link: ({ href, children, ...rest }) => {
+  if (!href) return <>{children}</>
+  const ownDomain = 'kuhehe.top'
+  const isHttp = href.startsWith('http://') || href.startsWith('https://')
+  const isExternal = isHttp && !href.includes(ownDomain)
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        {...rest}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        {children}
+      </a>
+    )
+  }
+
+  // 站内链接、本站完整域名链接、相对路径，都走 Next Link
+  return (
+    <Link href={href} {...rest}>
+      {children}
+    </Link>
+  )
+},
   Code,
   Collection,
   Equation,
