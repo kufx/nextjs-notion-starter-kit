@@ -103,7 +103,7 @@ border-radius: 6px !important;
   box-shadow: none;
   overflow: visible;
   background: var(--bg-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .notion-collection-card-cover img {
@@ -123,7 +123,6 @@ border-radius: 6px !important;
 }
 
 .notion-collection-card:hover {
-   transform: translateY(-1px);
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -133,7 +132,7 @@ border-radius: 6px !important;
 
  .notion-gallery-grid-size-small {  
    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr))!important;
-   grid-column-gap: 2px!important;
+   grid-column-gap: 4px!important;
  }
 
 
