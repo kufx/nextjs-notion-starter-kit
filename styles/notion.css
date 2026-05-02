@@ -12,6 +12,11 @@
   --notion-header-height: 54px;
 }
 
+.dark-mode {
+  --bg-color: #000000 !important;
+  --bg-color-0: #121212 !important;
+}
+
 .notion-frame {
   padding: 0;
 }
@@ -20,6 +25,20 @@
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
+
+.notion-page-link {
+  border-radius: 6px !important;
+}
+
+.notion-table * {
+  border-color: rgba(150, 150, 150, 0.3) !important;
+}
+
+.notion-table-of-contents-item {
+border-radius: 6px !important;
+}
+
+
 
 .index-page {
   --notion-max-width: 900px;
@@ -121,7 +140,8 @@
 
 .notion-quote {
   padding: 0.2em 0.75em;
-  background-color: rgba(120, 120, 120, 0.25);
+  background-color: rgba(150, 150, 150, 0.2)
+;
   line-height: 1.7;
   font-style: normal;
   font-size: 0.8em;
