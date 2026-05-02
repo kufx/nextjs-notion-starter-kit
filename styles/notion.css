@@ -13,8 +13,7 @@
 }
 
 .dark-mode {
-  --bg-color: #000000 !important;
-  --bg-color-0: #121212 !important;
+  --bg-color:  #0f141c !important;
 }
 
 .notion-frame {
