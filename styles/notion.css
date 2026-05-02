@@ -121,11 +121,11 @@
 
 .notion-quote {
   padding: 0.2em 0.75em;
-  background-color: rgba(240, 242, 245, 0.8);
-  line-height: 1.5;
+  background-color: rgba(240, 242, 245, 0.3);
+  line-height: 1.6;
   font-style: normal;
   font-size: 0.8em;
-  border-left: 4px solid #b0bec5;
+  border-left: 4px solid ＃D3D3D3;
 }
 
 .notion-h1,
@@ -139,7 +139,7 @@
 }
 
 .notion-hr {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 @media only screen and (max-width: 920px) {
