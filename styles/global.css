@@ -64,3 +64,7 @@ body {
 .notion-collection-row {
   display: none !important;
 }
+
+* {
+  -webkit-tap-highlight-color: transparent; /* 完全透明 */
+}
