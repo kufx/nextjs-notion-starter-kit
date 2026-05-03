@@ -114,7 +114,6 @@ border-radius: 6px !important;
   border-radius: 8px 8px 0 0;
   box-shadow: none;
   border-bottom: 1px solid rgba(150, 150, 150, 0.3);
-  transition: filter 150ms linear;
   filter: none;
 }
 
