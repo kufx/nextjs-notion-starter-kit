@@ -398,7 +398,8 @@ border-radius: 6px !important;
 }
 
 .notion-bookmark:hover {
- border-radius: inherit !important; 
+ border-color: rgba(33, 150, 243, 0.5) !important;
+ border-radius: 8px !important; 
 }
 
 .notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
