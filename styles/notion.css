@@ -87,7 +87,8 @@ border-radius: 6px !important;
 } */
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: bolder;
   white-space: unset;
 }
 
