@@ -394,7 +394,7 @@ border-radius: 6px !important;
 }
 
 .notion-bookmark {
-  border-color: rgba(150, 150, 150, 0.3);
+  border-color: rgba(150, 150, 150, 0.3) !important;
 }
 
 .notion-bookmark:hover {
