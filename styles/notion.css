@@ -105,13 +105,10 @@ border-radius: 6px !important;
   border: 1px solid rgba(150, 150, 150, 0.3);
   overflow: hidden;
   background: var(--bg-color);
-  transform: translateZ(0);
-  transition: transform 0.15s ease;
 }
 
 .notion-collection-card:hover {
-  background: unset !important;
-  transform: translateY(-1px) translateZ(0);
+  
 }
 
 .notion-collection-card-cover {
