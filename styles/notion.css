@@ -108,7 +108,10 @@ border-radius: 6px !important;
   transition: none !important;
 }
 
-
+.notion-collection-card:hover {
+  background: unset !important;
+  border-color: rgba(160, 160, 160, 0.6);
+}
 
 .notion-collection-card-cover {
   border-bottom: 1px solid rgba(150, 150, 150, 0.3);
