@@ -104,9 +104,11 @@ border-radius: 6px !important;
   border-radius: 8px;
   border: 2px solid rgba(150, 150, 150, 0.3);
   box-shadow: none;
-  overflow: visible;
+  overflow: hidden;
   background: var(--bg-color);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 
@@ -114,7 +116,14 @@ border-radius: 6px !important;
 
 
 .notion-collection-card:hover {
-   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.notion-collection-card-cover {
+  border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+  
 }
 
 .notion-collection-card-body {
