@@ -176,15 +176,12 @@ border-radius: 6px !important;
 }
 
 .notion-callout {
-  max-width: 100%;
-  box-sizing: border-box;
   margin: 0.75em 0;
 }
 
 
 .notion-callout-text * {
   max-width: 100%;
-  box-sizing: border-box;
 }
 
  .notion-callout-text img,
@@ -193,7 +190,6 @@ border-radius: 6px !important;
    max-width: 100% !important;
    height: auto !important;
    display: block !important;
-   box-sizing: border-box;
  }
  
  .notion-callout-text table {
