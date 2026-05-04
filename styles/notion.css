@@ -180,22 +180,12 @@ border-radius: 6px !important;
 }
 
 
-.notion-callout-text * {
-  max-width: 100%;
-}
-
- .notion-callout-text img,
- .notion-callout-text iframe,
- .notion-callout-text table {
+ .notion-callout-text img {
    max-width: 100% !important;
    height: auto !important;
    display: block !important;
  }
  
- .notion-callout-text table {
-   overflow-x: auto;
-   display: block;
- }
 
 .notion-hr {
   margin: 1em 0;
