@@ -107,8 +107,7 @@ border-radius: 6px !important;
   background: var(--bg-color);
   transition: transform 0.2s ease;
   transform: translateZ(0);
-  will-change: transform;
-  contain: layout paint size;
+  
 }
 
 
