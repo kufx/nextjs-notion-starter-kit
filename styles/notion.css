@@ -179,6 +179,16 @@ border-radius: 6px !important;
   margin: 0.75em 0;
 }
 
+.notion-callout * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.notion-callout-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .notion-hr {
   margin: 1em 0;
 }
