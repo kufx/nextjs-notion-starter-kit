@@ -105,7 +105,7 @@ border-radius: 6px !important;
   border: 1px solid rgba(150, 150, 150, 0.3);
   overflow: hidden;
   background: var(--bg-color);
-  transition: none;
+  transition: none !important;
 }
 
 
@@ -121,7 +121,7 @@ border-radius: 6px !important;
 
  .notion-gallery-grid-size-small {  
    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr))!important;
-   grid-column-gap: 4px!important;
+   grid-column-gap: 6px!important;
  }
 
 
