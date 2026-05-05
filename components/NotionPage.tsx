@@ -199,27 +199,27 @@ const notionRendererComponents: Partial<NotionComponents> = {
   propertyLastEditedTimeValue,
   propertyTextValue,
   propertyDateValue,
-  Link: ({ href, children, ...props }) => {
-    let isExternal = false;
-    if (href) {
-      try {
-        const url = href.startsWith('//')
-          ? new URL('https:' + href)
-          : new URL(href);
-        isExternal = url.hostname !== 'notes.kuhehe.top';
-      } catch {}
-    }
-    return (
-      <a
-        href={href}
-        target={isExternal ? '_blank' : undefined}
-        rel={isExternal ? 'noopener noreferrer nofollow' : undefined}
-        {...props}
-      >
-        {children}
-      </a>
-    );
-  },
+  Link: ({ href, children, ...props }: any) => {
+  let isExternal = false;
+  if (href) {
+    try {
+      const url = href.startsWith('//')
+        ? new URL('https:' + href)
+        : new URL(href);
+      isExternal = url.hostname !== 'notes.kuhehe.top';
+    } catch {}
+  }
+  return (
+    <a
+      href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer nofollow' : undefined}
+      {...props}
+    >
+      {children}
+    </a>
+  );
+},
 }
 
 export function NotionPage({
