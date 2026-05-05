@@ -206,7 +206,12 @@ const notionRendererComponents: Partial<NotionComponents> = {
       const url = href.startsWith('//')
         ? new URL('https:' + href)
         : new URL(href);
-      isExternal = url.hostname !== 'notes.kuhehe.top';
+      const rootDomain = 'kuhehe.top';
+      // hostname 等于 kuhehe.top 或以 .kuhehe.top 结尾 → 内链
+      isExternal = !(
+        url.hostname === rootDomain ||
+        url.hostname.endsWith('.' + rootDomain)
+      );
     } catch {}
   }
   return (
