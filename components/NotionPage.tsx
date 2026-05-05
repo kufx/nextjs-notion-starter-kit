@@ -198,7 +198,28 @@ const notionRendererComponents: Partial<NotionComponents> = {
   Header: NotionPageHeader,
   propertyLastEditedTimeValue,
   propertyTextValue,
-  propertyDateValue
+  propertyDateValue,
+  Link: ({ href, children, ...props }) => {
+    let isExternal = false;
+    if (href) {
+      try {
+        const url = href.startsWith('//')
+          ? new URL('https:' + href)
+          : new URL(href);
+        isExternal = url.hostname !== 'notes.kuhehe.top';
+      } catch {}
+    }
+    return (
+      <a
+        href={href}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer nofollow' : undefined}
+        {...props}
+      >
+        {children}
+      </a>
+    );
+  },
 }
 
 export function NotionPage({
@@ -324,31 +345,6 @@ export function NotionPage({
         searchNotion={config.isSearchEnabled ? searchNotion : undefined}
         pageAside={pageAside}
         footer={<Footer />}
-        components={{
-    Link: ({ href, children, ...props }) => {
-      // 直接内联判断，不需要额外文件
-      let isExternal = false;
-      if (href) {
-        try {
-          const url = href.startsWith('//')
-            ? new URL('https:' + href)
-            : new URL(href);
-          isExternal = url.hostname !== 'notes.kuhehe.top';
-        } catch {}
-      }
-
-      return (
-        <a
-          href={href}
-          target={isExternal ? '_blank' : undefined}
-          rel={isExternal ? 'noopener noreferrer nofollow' : undefined}
-          {...props}
-        >
-          {children}
-        </a>
-      );
-    },
-  }}
       />
 
       <GitHubShareButton />
