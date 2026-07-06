@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
+}
+
+body * {
   font-family: serif !important;
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 
 a {
