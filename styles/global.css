@@ -1,11 +1,8 @@
 * {
   box-sizing: border-box;
+  font-family: serif !important;
 }
 
-body * {
-  font-family: serif !important;
-  font-weight: 500 !important;
-}
 
 a {
  /* color: inherit; */
@@ -25,7 +22,6 @@ a:not(.notion-page-link):not(.notion-collection-card):not(.notion-hash-link):not
 
 .notion b {    
   background: linear-gradient(0,  rgba(255, 255, 0, 0.6),  rgba(255, 255, 0, 0.4)) no-repeat center bottom / 100% 40%;
-  font-weight: bolder !important;
 }
 
 body,
