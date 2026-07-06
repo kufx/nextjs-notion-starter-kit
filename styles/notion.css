@@ -10,7 +10,6 @@
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
-  padding: 24px 16px;
 }
 
 .dark-mode {
@@ -19,7 +18,7 @@
 }
 
 .notion-frame {
-  padding: 0;
+  padding: 16px;
 }
 
 .notion-page {
