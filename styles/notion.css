@@ -56,6 +56,21 @@ article {
   font-weight: 600 !important;
 }
 
+
+/* 正文文字中等加粗 */
+.notion-text,
+.notion-block p,
+.notion-callout-content {
+  font-weight: 500 !important;
+}
+
+/* 标题、重点文字保留700粗体 */
+h1,h2,h3,h4,h5,h6,strong,b {
+  font-weight: 700 !important;
+}
+
+
+
 .notion-asset-caption {
   text-align: center;
 }
