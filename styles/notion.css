@@ -24,7 +24,8 @@
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
-  padding: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .notion-page-link {
