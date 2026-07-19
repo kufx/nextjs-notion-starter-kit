@@ -456,7 +456,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
 }
 
 .notion-toggle {
-    margin: 2px 0;
+    margin: 1px 0;
     position: relative;
 }
 
@@ -471,7 +471,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     font-weight: 600;
 }
 .notion-toggle > summary:hover {
-    background: rgba(245, 245, 245, 0.6);
+    background: rgba(128, 128, 128, 0.25);
     border-radius: 4px;
 }
 
@@ -506,9 +506,9 @@ h1,h2,h3,h4,h5,h6,strong,b {
 
 /* 正文和标题padding-left完全一致，完美对齐，无错位 */
 .notion-toggle > div {
-    margin: 2px 0;
+    margin: 1px 0;
     padding-left: 16px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
 }
