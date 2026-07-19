@@ -456,7 +456,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
 }
 
 .notion-toggle {
-    margin: 4px 0;
+    margin: 2px 0;
     position: relative;
 }
 
@@ -471,7 +471,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     font-weight: 600;
 }
 .notion-toggle > summary:hover {
-    background: #f5f5f5;
+    background: rgba(245, 245, 245, 0.3);
     border-radius: 4px;
 }
 
@@ -486,7 +486,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #444;
+    border-top: 6px solid rgba(currentColor, 0.6);
     transition: transform 0.2s;
 }
 .notion-toggle[open] > summary::before {
@@ -497,16 +497,16 @@ h1,h2,h3,h4,h5,h6,strong,b {
 .notion-toggle[open]::after {
     content: "";
     position: absolute;
-    left: 4px;
+    left: 5px;
     top: 24px;
     width: 1px;
-    background: #ddd;
+    background: rgba(150,150,150,0.4);
     bottom: 0;
 }
 
 /* 正文和标题padding-left完全一致，完美对齐，无错位 */
 .notion-toggle > div {
-    margin: 4px 0;
+    margin: 2px 0;
     padding-left: 16px;
     display: flex;
     flex-direction: column;
