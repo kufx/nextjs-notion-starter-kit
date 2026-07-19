@@ -454,3 +454,61 @@ h1,h2,h3,h4,h5,h6,strong,b {
 .notion-equation.notion-equation-block{
   align-items: center;
 }
+
+.notion-toggle {
+    margin: 4px 0;
+    position: relative;
+}
+
+.notion-toggle > summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 16px; /* 给箭头预留左侧空位 */
+    position: relative;
+}
+.notion-toggle[open] > summary {
+    font-weight: 600;
+}
+.notion-toggle > summary:hover {
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* 自定义箭头，绝对定位，悬浮在左边空白处，不挤占文字 */
+.notion-toggle > summary::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #444;
+    transition: transform 0.2s;
+}
+.notion-toggle[open] > summary::before {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+/* 层级竖线 */
+.notion-toggle[open]::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 24px;
+    width: 1px;
+    background: #ddd;
+    bottom: 0;
+}
+
+/* 正文和标题padding-left完全一致，完美对齐，无错位 */
+.notion-toggle > div {
+    margin: 4px 0;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
