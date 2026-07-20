@@ -498,7 +498,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     content: "";
     position: absolute;
     left: 6px;
-    top: 26px;
+    top: 30px;
     width: 1px;
     background: rgba(150,150,150,0.4);
     bottom: 0;
