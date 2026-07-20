@@ -466,6 +466,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     font-size: 16px;
     padding-left: 16px; /* 给箭头预留左侧空位 */
     position: relative;
+    transition: background 0.2s ease;
 }
 .notion-toggle[open] > summary {
     font-weight: 600;
