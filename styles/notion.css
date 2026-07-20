@@ -471,7 +471,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     font-weight: 600;
 }
 .notion-toggle > summary:hover {
-    background: rgba(128, 128, 128, 0.25);
+    background: rgba(128, 128, 128, 0.15);
     border-radius: 4px;
 }
 
@@ -498,7 +498,7 @@ h1,h2,h3,h4,h5,h6,strong,b {
     content: "";
     position: absolute;
     left: 6px;
-    top: 24px;
+    top: 26px;
     width: 1px;
     background: rgba(150,150,150,0.4);
     bottom: 0;
