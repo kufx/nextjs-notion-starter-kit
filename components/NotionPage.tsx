@@ -187,7 +187,35 @@ const notionRendererComponents: Partial<NotionComponents> = {
   Header: NotionPageHeader,
   propertyLastEditedTimeValue,
   propertyTextValue,
-  propertyDateValue
+  propertyDateValue,
+    // 从这里往下到最后一个 } 之前，就是新增的代码了，可以对比一下
+  // 然后再复制粘贴即可，别忘了上面那个逗号 ,
+  Link: ({ href, children, ...props }: any) => {
+  let isExternal = false;
+  if (href) {
+    try {
+      const url = href.startsWith('//')
+        ? new URL('https:' + href)
+        : new URL(href);
+      const rootDomain = 'kuhehe.top';
+      // hostname 等于 kuhehe.top 或以 .kuhehe.top 结尾 → 内链
+      isExternal = !(
+        url.hostname === rootDomain ||
+        url.hostname.endsWith('.' + rootDomain)
+      );
+    } catch {}
+  }
+  return (
+    <a
+      href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer nofollow' : undefined}
+      {...props}
+    >
+      {children}
+    </a>
+  );
+},
 }
 
 export function NotionPage({
