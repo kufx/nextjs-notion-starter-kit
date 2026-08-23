@@ -13,6 +13,9 @@ export default siteConfig({
   domain: 'notes.kuhehe.top',
   author: '酷小呵 kuhehe.top',
 
+  // 👉 开启页面ID路由（只有子页面带ID，首页不带）
+  includeNotionIdInUrls: true,
+  
   // open graph metadata (optional)
   description: '酷小呵笔记，专注收集全网实用网站、软件等资源分享',
 
