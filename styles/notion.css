@@ -57,6 +57,27 @@
   -webkit-tap-highlight-color: transparent; /* 完全透明 */
 }
 
+a {
+ /* color: inherit; */
+  text-decoration: none;
+}
+
+a:not(.notion-page-link):not(.notion-collection-card):not(.notion-hash-link):not(.breadcrumb):not(.notion-table-of-contents-item) {    
+  box-shadow: inset 0 -0.07em 0 rgba(33, 150, 243, 1);  
+  color: rgba(33, 150, 243, 1);  
+  transition: box-shadow 0.3s ease;
+}
+a:not(.notion-page-link):not(.notion-collection-card):not(.notion-hash-link):not(.breadcrumb):not(.notion-table-of-contents-item):hover {
+  box-shadow: inset 0 -1.5em 0 rgba(33, 150, 243, 0.2); 
+  color: rgba(33, 150, 243, 1);
+  border-radius: 4px;
+}
+
+.notion b {    
+  background: linear-gradient(0,  rgba(255, 255, 0, 0.6),  rgba(255, 255, 0, 0.4)) no-repeat center bottom / 100% 40%;
+  font-weight: bolder !important;
+}
+
 .notion-collection-row {
   display: none !important;
 }
@@ -67,7 +88,10 @@
   gap: 6vmin;
 }
 
-
+ .notion-gallery-grid-size-small {  
+   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr))!important;
+   grid-column-gap: 6px!important;
+ }
 
 /* only target safari */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
