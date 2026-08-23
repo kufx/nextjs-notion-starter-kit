@@ -14,7 +14,6 @@
 
 .dark-mode {
   --bg-color:  #0f141c !important;
-  --bg-color-0: #121212 !important;
 }
 
 .notion-frame {
@@ -112,6 +111,9 @@ border-radius: 6px !important;
    grid-column-gap: 6px!important;
  }
 
+.notion-collection-card {
+  border: 5px solid transparentrgba(150,150,150,0.4);
+}
 
 /* 让标题行变成 flex 容器，强制居中 */
 .notion-collection .notion-page-title {
