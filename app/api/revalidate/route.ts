@@ -1,36 +1,34 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { revalidatePath } from 'next/cache'
+import { NextRequest, NextResponse } from 'next/server'
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const REVALIDATE_SECRET = '123456'  // 记得改成你自己的密码
+// =========在这里写你的密钥，不要泄露给别人=========
+const REVALIDATE_SECRET = "123456"
 
-  if (req.query.secret !== REVALIDATE_SECRET) {
-    return res.status(401).json({ message: '密钥错误' })
+export async function GET(req: NextRequest) {
+  const secret = req.nextUrl.searchParams.get('secret')
+  const pathRaw = req.nextUrl.searchParams.get('path')
+
+  if (secret !== REVALIDATE_SECRET) {
+    return NextResponse.json({ ok: false, msg: 'secret密钥错误' }, { status: 401 })
   }
 
-  try {
-    const path = req.query.path as string | undefined
+  const paths = pathRaw ? pathRaw.split(',') : ['/']
+  const resultList: Array<{path:string; ok:boolean; error?:string}> = []
 
-    if (path) {
-      // 刷新单个指定页面
-      await res.revalidate(path)
-      return res.json({
-        status: 'success',
-        msg: `已刷新页面: ${path}`,
-        path
-      })
-    } else {
-      // 👉 这里是修复后的正确代码！！
-      await res.revalidate('/')           // 刷新首页
-      await res.revalidate('/[pageId]')   // 刷新所有文章页（适配你的项目）
-      return res.json({
-        status: 'success',
-        msg: '已刷新首页 + 全部文章页面缓存'
-      })
+  for(const p of paths){
+    const trimPath = p.trim()
+    if(!trimPath) continue
+    try {
+      revalidatePath(trimPath)
+      resultList.push({ path: trimPath, ok:true })
+    } catch (e) {
+      resultList.push({ path: trimPath, ok:false, error: String(e) })
     }
-  } catch (err) {
-    return res.status(500).json({ message: '刷新失败' })
   }
+
+  return NextResponse.json({
+    ok: true,
+    timestamp: Date.now(),
+    revalidateResult: resultList
+  })
 }
