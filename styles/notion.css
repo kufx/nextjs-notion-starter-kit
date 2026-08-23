@@ -112,7 +112,7 @@ border-radius: 6px !important;
  }
 
 .notion-collection-card {
-  border: 5px solid transparentrgba(150,150,150,0.4);
+  border: 5px solid rgba(150,150,150,0.4);
 }
 
 /* 让标题行变成 flex 容器，强制居中 */
