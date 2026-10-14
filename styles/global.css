@@ -61,30 +61,29 @@ body {
 }
 
 
-:root {
---notion-red_background: rgba(244, 67, 54, 0.2);
---notion-blue_background: rgba(33, 150, 243, 0.2);
---notion-orange_background: rgba(250, 100, 0, 0.2);
---notion-yellow_background: rgba(255, 221, 0, 0.2);     /* 柠檬黄荧光 */
---notion-teal_background: rgba(61, 197, 80, 0.2);
---notion-pink_background: rgba(244, 223, 235, 0.4);
---notion-gray_background: rgba(230, 230, 230, 0.15);     /* 中灰荧光 */
---notion-brown_background: rgba(165, 110, 80, 0.2);     /* 深驼色荧光 */
---notion-purple_background: rgba(191, 90, 242, 0.2);    /* 电子紫荧光 */
---notion-pink_background: rgba(255, 80, 172, 0.2);    /* 电子紫荧光 */
---notion-default_background: rgba(0, 0, 0, 0);
 
---notion-red_background_co: rgba(255, 60, 60, 0.2);        /* 亮红色荧光 */
---notion-pink_background_co: rgba(255, 80, 172, 0.2);      /* 霓虹粉荧光 */
---notion-blue_background_co: rgba(33, 150, 243, 0.2);       /* 深天蓝荧光 */
---notion-purple_background_co: rgba(191, 90, 242, 0.2);    /* 电子紫荧光 */
---notion-teal_background_co: rgba(61, 197, 80, 0.2);      /* 氰色荧光 */
---notion-yellow_background_co: rgba(255, 221, 0, 0.2);     /* 柠檬黄荧光 */
---notion-orange_background_co: rgba(255, 140, 0, 0.2);     /* 警示橙荧光 */
---notion-brown_background_co: rgba(165, 110, 80, 0.2);     /* 深驼色荧光 */
---notion-gray_background_co: rgba(240, 240, 240, 0.15);     /* 中灰荧光 */
---notion-green_background_co: rgba(50, 215, 75, 0.2);      /* 荧光绿 */
-}
+.notion-blue_background { background:rgba(33, 150, 243, 0.2); color:rgba(33, 150, 243, 0.95); }
+.notion-orange_background { background:rgba(250, 100, 0, 0.2); color:rgba(250, 100, 0, 0.95); }
+.notion-yellow_background { background:rgba(255, 221, 0, 0.2); color:rgba(255, 221, 0, 0.95); }     /* 柠檬黄荧光 */
+.notion-teal_background { background:rgba(61, 197, 80, 0.2); color:rgba(61, 197, 80, 0.95); }
+.notion-pink_background { background:rgba(244, 223, 235, 0.4); color:rgba(244, 223, 235, 0.95); }
+.notion-gray_background { background:rgba(230, 230, 230, 0.15); color:rgba(230, 230, 230, 0.95); }     /* 中灰荧光 */
+.notion-brown_background { background:rgba(165, 110, 80, 0.2); color:rgba(165, 110, 80, 0.95); }     /* 深驼色荧光 */
+.notion-purple_background { background:rgba(191, 90, 242, 0.2); color:rgba(191, 90, 242, 0.95); }    /* 电子紫荧光 */
+.notion-pink_background { background:rgba(255, 80, 172, 0.2); color:rgba(255, 80, 172, 0.95); }    /* 电子紫荧光 */
+.notion-default_background { background:rgba(0, 0, 0, 0); color:rgba(0, 0, 0, 0.95); }
+
+.notion-red_background_co { background:rgba(255, 60, 60, 0.2); color:rgba(255, 60, 60, 0.95); }        /* 亮红色荧光 */
+.notion-pink_background_co { background:rgba(255, 80, 172, 0.2); color:rgba(255, 80, 172, 0.95); }      /* 霓虹粉荧光 */
+.notion-blue_background_co { background:rgba(33, 150, 243, 0.2); color:rgba(33, 150, 243, 0.95); }       /* 深天蓝荧光 */
+.notion-purple_background_co { background:rgba(191, 90, 242, 0.2); color:rgba(191, 90, 242, 0.95); }    /* 电子紫荧光 */
+.notion-teal_background_co { background:rgba(61, 197, 80, 0.2); color:rgba(61, 197, 80, 0.95); }      /* 氰色荧光 */
+.notion-yellow_background_co { background:rgba(255, 221, 0, 0.2); color:rgba(255, 221, 0, 0.95); }     /* 柠檬黄荧光 */
+.notion-orange_background_co { background:rgba(255, 140, 0, 0.2); color:rgba(255, 140, 0, 0.95); }     /* 警示橙荧光 */
+.notion-brown_background_co { background:rgba(165, 110, 80, 0.2); color:rgba(165, 110, 80, 0.95); }     /* 深驼色荧光 */
+.notion-gray_background_co { background:rgba(240, 240, 240, 0.15); color:rgba(240, 240, 240, 0.95); }     /* 中灰荧光 */
+.notion-green_background_co { background:rgba(50, 215, 75, 0.2); color:rgba(50, 215, 75, 0.95); }      /* 荧光绿 */
+
 
 
 [class="notion-orange_background"] {    border-radius: 2px;}
