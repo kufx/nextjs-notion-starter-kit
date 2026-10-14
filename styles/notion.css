@@ -364,7 +364,7 @@ border-radius: 6px !important;
 
 .notion-tab-block {
   /* 修改边框颜色，替换成你想要的色值 */
-  border-color: rgba(150,150,150,0.4);
+  border-color: rgba(150,150,150,0.4)!important;
 }
 
 .notion-quote {
