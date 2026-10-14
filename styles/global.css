@@ -61,6 +61,32 @@ body {
 }
 
 
+:root {
+--notion-red_background: rgba(244, 67, 54, 0.2);
+--notion-blue_background: rgba(33, 150, 243, 0.2);
+--notion-orange_background: rgba(250, 100, 0, 0.2);
+--notion-yellow_background: rgba(255, 221, 0, 0.2);     /* 柠檬黄荧光 */
+--notion-teal_background: rgba(61, 197, 80, 0.2);
+--notion-pink_background: rgba(244, 223, 235, 0.4);
+--notion-gray_background: rgba(230, 230, 230, 0.15);     /* 中灰荧光 */
+--notion-brown_background: rgba(165, 110, 80, 0.2);     /* 深驼色荧光 */
+--notion-purple_background: rgba(191, 90, 242, 0.2);    /* 电子紫荧光 */
+--notion-pink_background: rgba(255, 80, 172, 0.2);    /* 电子紫荧光 */
+--notion-default_background: rgba(0, 0, 0, 0);
+
+--notion-red_background_co: rgba(255, 60, 60, 0.2);        /* 亮红色荧光 */
+--notion-pink_background_co: rgba(255, 80, 172, 0.2);      /* 霓虹粉荧光 */
+--notion-blue_background_co: rgba(33, 150, 243, 0.2);       /* 深天蓝荧光 */
+--notion-purple_background_co: rgba(191, 90, 242, 0.2);    /* 电子紫荧光 */
+--notion-teal_background_co: rgba(61, 197, 80, 0.2);      /* 氰色荧光 */
+--notion-yellow_background_co: rgba(255, 221, 0, 0.2);     /* 柠檬黄荧光 */
+--notion-orange_background_co: rgba(255, 140, 0, 0.2);     /* 警示橙荧光 */
+--notion-brown_background_co: rgba(165, 110, 80, 0.2);     /* 深驼色荧光 */
+--notion-gray_background_co: rgba(240, 240, 240, 0.15);     /* 中灰荧光 */
+--notion-green_background_co: rgba(50, 215, 75, 0.2);      /* 荧光绿 */
+}
+
+
 [class="notion-orange_background"] {    border-radius: 2px;}
 [class="notion-blue_background"] {    border-radius: 2px;}
 [class="notion-red_background"],.notion-h.notion-red_background {    border-radius: 2px;}
