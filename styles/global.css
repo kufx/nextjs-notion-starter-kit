@@ -71,7 +71,8 @@ body {
 .notion-brown_background { background:rgba(165, 110, 80, 0.2); color:rgba(165, 110, 80, 0.95); }     /* 深驼色荧光 */
 .notion-purple_background { background:rgba(191, 90, 242, 0.2); color:rgba(191, 90, 242, 0.95); }    /* 电子紫荧光 */
 .notion-pink_background { background:rgba(255, 80, 172, 0.2); color:rgba(255, 80, 172, 0.95); }    /* 电子紫荧光 */
-.notion-default_background { background:rgba(0, 0, 0, 0); color:rgba(0, 0, 0, 0.95); }
+.notion-red_background { background:rgba(255, 60, 60, 0.2); color:rgba(255, 60, 60, 0.95); }        /* 亮红色荧光 */
+
 
 .notion-red_background_co { background:rgba(255, 60, 60, 0.2); color:rgba(255, 60, 60, 0.95); }        /* 亮红色荧光 */
 .notion-pink_background_co { background:rgba(255, 80, 172, 0.2); color:rgba(255, 80, 172, 0.95); }      /* 霓虹粉荧光 */
@@ -81,14 +82,14 @@ body {
 .notion-yellow_background_co { background:rgba(255, 221, 0, 0.2); color:rgba(255, 221, 0, 0.95); }     /* 柠檬黄荧光 */
 .notion-orange_background_co { background:rgba(255, 140, 0, 0.2); color:rgba(255, 140, 0, 0.95); }     /* 警示橙荧光 */
 .notion-brown_background_co { background:rgba(165, 110, 80, 0.2); color:rgba(165, 110, 80, 0.95); }     /* 深驼色荧光 */
-.notion-gray_background_co { background:rgba(240, 240, 240, 0.15); color:rgba(240, 240, 240, 0.95); }     /* 中灰荧光 */
+.notion-gray_background_co { background:rgba(240, 240, 240, 0.2); }     /* 中灰荧光 */
 .notion-green_background_co { background:rgba(50, 215, 75, 0.2); color:rgba(50, 215, 75, 0.95); }      /* 荧光绿 */
 
 
 
 [class="notion-orange_background"] {    border-radius: 2px;}
 [class="notion-blue_background"] {    border-radius: 2px;}
-[class="notion-red_background"],.notion-h.notion-red_background {    border-radius: 2px;}
+[class="notion-red_background"],.notion-h {    border-radius: 2px;}
 [class="notion-teal_background"] {    border-radius: 2px;}
 [class="notion-yellow_background"] {    border-radius: 2px;}
 [class="notion-purple_background"] {    border-radius: 2px;}
@@ -97,23 +98,20 @@ body {
 [class="notion-gray_background"] {    border-radius: 2px;}
 
 
-.notion-orange_background_co, .notion-quote.notion-orange_background,.notion-orange_background {  color: rgba(250, 100, 0, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-orange_background,.notion-orange {  color: rgba(250, 100, 0, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-red_background , .notion-red_background{  color: rgba(255, 60, 60, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-red_background , .notion-red {  color: rgba(255, 60, 60, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-blue_background,.notion-blue_background {  color: rgba(33, 150, 243, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-blue_background,.notion-blue {  color: rgba(33, 150, 243, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-teal_background,.notion-teal_background {  color: rgba(61, 197, 80, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-teal_background,.notion-teal {  color: rgba(61, 197, 80, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-purple_background,.notion-purple_background {  color: rgba(191, 90, 242, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-purple_background,.notion-purple {  color: rgba(191, 90, 242, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-yellow_background,.notion-yellow_background {  color: rgba(255, 176, 0, 1) !important; text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-yellow_background,.notion-yellow {  color: rgba(255, 176, 0, 1) !important; text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-gray_background,.notion-gray_background {  color: rgba(160, 150, 150, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-gray_background,.notion-gray {  color: rgba(160, 150, 150, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-brown_background,.notion-brown_background {  color: rgba(165, 110, 80, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
+.notion-quote.notion-brown_background,.notion-brown {  color: rgba(165, 110, 80, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
-.notion-quote.notion-pink_background,.notion-pink_background {  color: rgba(255, 80, 172, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
-
-.notion-gallery {  margin: 0 2px; padding:0;}
- .notion-gallery a {  margin: 0 2px!important; }
+.notion-quote.notion-pink_background,.notion-pink {  color: rgba(255, 80, 172, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
