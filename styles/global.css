@@ -119,19 +119,11 @@ body {
 .notion-quote.notion-pink_background,.notion-pink {  color: rgba(255, 80, 172, 1) !important; /* 浅色模式为白，深色模式需反转逻辑 */}
 
 
-/* 取消独立公式块 notion-equation-block 焦点/点击蓝色背景与边框 */
-.notion-equation.notion-equation-block {
-  background-color: transparent !important;
-  border: none !important;
+.notion-equation {
+  background: transparent !important;
   outline: none !important;
   box-shadow: none !important;
-}
-
-.notion-equation.notion-equation-block:focus,
-.notion-equation.notion-equation-block:focus-visible,
-.notion-equation.notion-equation-block:active {
-  background-color: transparent !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+  -webkit-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default !important;
 }
