@@ -127,3 +127,16 @@ body {
   user-select: text !important;
   -webkit-touch-callout: default !important;
 }
+
+/* ===== 针对你的结构：notion-equation + katex-display 修复 ===== */
+ .notion-equation.notion-equation-block {
+   overflow-x: auto !important;
+   overflow-y: hidden !important;
+   padding: 8px 0 !important;
+   max-width: 100% !important;
+ }
+ .katex-display {
+   display: inline-block !important;
+   margin: 0 !important;
+   white-space: nowrap !important;
+ }
