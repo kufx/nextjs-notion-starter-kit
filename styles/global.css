@@ -128,15 +128,22 @@ body {
   -webkit-touch-callout: default !important;
 }
 
-/* ===== 针对你的结构：notion-equation + katex-display 修复 ===== */
+
+/* ========== 方案B：保留居中，但是向左可以滚动到头（推荐试这个） ========== */
  .notion-equation.notion-equation-block {
+   display: block !important;
    overflow-x: auto !important;
    overflow-y: hidden !important;
    padding: 8px 0 !important;
    max-width: 100% !important;
  }
- .katex-display {
+ .notion-equation.notion-equation-block .katex-display {
    display: inline-block !important;
    margin: 0 !important;
-   white-space: nowrap !important;
+   padding-left: 100vw !important;
+   padding-right: 100vw !important;
+ }
+ .notion-equation.notion-equation-block .katex {
+   padding-left: 100vw !important;
+   padding-right: 100vw !important;
  }
