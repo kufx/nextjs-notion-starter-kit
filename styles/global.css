@@ -140,10 +140,6 @@ body {
  .notion-equation.notion-equation-block .katex-display {
    display: inline-block !important;
    margin: 0 !important;
-   padding-left: 20vw !important;
-   padding-right: 20vw !important;
- }
- .notion-equation.notion-equation-block .katex {
-   padding-left: 20vw !important;
-   padding-right: 20vw !important;
+   padding-left: 10vw !important;
+   padding-right: 10vw !important;
  }
