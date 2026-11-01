@@ -2,22 +2,22 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '336a7a4ad19180be9010f525c9a6d740',
+  rootNotionPageId: process.env.ROOT_NOTION_PAGE_ID || '336a7a4ad19180be9010f525c9a6d740',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: process.env.NOTION_SPACE_ID || null,
 
   // basic site info (required)
-  name: '酷小呵笔记|kuhehe.top',
-  domain: 'notes.kuhehe.top',
-  author: '酷小呵 kuhehe.top',
+  name: process.env.SITE_NAME || '酷小呵笔记|kuhehe.top',
+  domain: process.env.SITE_DOMAIN || 'notes.kuhehe.top',
+  author: process.env.SITE_AUTHOR || '酷小呵 kuhehe.top',
 
   // 👉 开启页面ID路由（只有子页面带ID，首页不带）
   includeNotionIdInUrls: true,
   
   // open graph metadata (optional)
-  description: '酷小呵笔记，专注收集全网实用网站、软件等资源分享',
+  description: process.env.SITE_DESCRIPTION || '酷小呵笔记，专注收集全网实用网站、软件等资源分享',
 
   // social usernames (optional)
  // twitter: 'transitive_bs',
