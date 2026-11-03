@@ -1,28 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { revalidateTag } from 'next/cache'
+import { revalidatePath } from 'next/cache'
 
 export async function GET(req: NextRequest) {
-  // 密钥直接写在这里，改成你自己的一串密码
+  // 在这里写死你的密钥，改成你自己的
   const MY_SECRET = "123456"
 
   const secret = req.nextUrl.searchParams.get('secret')
   if (secret !== MY_SECRET) {
     return NextResponse.json(
-      { success: false, message: '密钥错误' },
+      { ok: false, msg: "密钥不对" },
       { status: 401 }
     )
   }
 
   try {
-    revalidateTag('sitemap')
+    await revalidatePath('/sitemap.xml')
     return NextResponse.json({
-      success: true,
-      message: 'sitemap缓存标记失效，带上?t=随机数访问sitemap.xml获取最新'
+      ok: true,
+      msg: "已清除缓存标记，请访问 /sitemap.xml?t=111 查看最新"
     })
-  } catch (err) {
-    console.error(err)
+  } catch (e) {
+    console.error(e)
     return NextResponse.json(
-      { success: false, error: String(err) },
+      { ok: false, error: String(e) },
       { status: 500 }
     )
   }
